@@ -146,12 +146,12 @@ header {
     position: relative;
     left: 30px;
 }
-.another-expirience {
+.another-experience {
     padding-top: 20px;
     padding-bottom: 50px;
     border-bottom: 3px solid #dbdad3;
 }
-.another-expirience p {
+.another-experience p {
     max-width: 650px;
     margin: 20px auto 40px auto;
 }
