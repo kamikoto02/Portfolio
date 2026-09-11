@@ -34,6 +34,7 @@ header {
     border: 5px solid white;
     position: relative;
     top: 70px;
+    animation: 1.5s show2 ease;
 
 
 }
@@ -55,6 +56,7 @@ header {
     padding: 20px 20px 50px 20px;
 }
 .portfolio-projects {
+    animation: 1.5s show ease;
     padding-bottom: 80px;
     border-bottom: 3px solid #dbdad3;
     margin-bottom: 50px;
@@ -93,6 +95,7 @@ header {
 }
 
 .skills {
+    animation: 1.5s show3 ease;
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
@@ -185,4 +188,34 @@ footer {
 .animations {
     left: 0;
 }
+}
+
+
+
+@keyframes show {
+  from {
+    opacity: 0; 
+    transform: translateY(100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes show2 {
+  from {
+    opacity: 0; 
+    transform: translateX(100px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes show3 {
+  from {
+    opacity: 0; 
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
