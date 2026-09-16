@@ -150,6 +150,7 @@ header {
     left: 30px;
 }
 .other-experience {
+    animation: 1.5s show ease;
     padding-top: 20px;
     padding-bottom: 50px;
     border-bottom: 3px solid #dbdad3;
