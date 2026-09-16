@@ -140,6 +140,9 @@ header {
     width: 330px;
     height: 210px;
     border-radius: 20px;
+    box-shadow: -2px -2px 30px 0px rgba(0,0,0,0.1);
+-webkit-box-shadow: -2px -2px 30px 0px rgba(0,0,0,0.1);
+-moz-box-shadow: -2px -2px 30px 0px rgba(0,0,0,0.1);
 }
 .animations {
     display: flex;
