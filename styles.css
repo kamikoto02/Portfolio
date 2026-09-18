@@ -6,6 +6,7 @@ body {
     padding: 0;
     color: #6e6d68;
     background-color: #ebeae6;
+    
 }
 
 
@@ -17,7 +18,7 @@ body {
 }
 
 header {
-    background-color: #cfcec8;
+    background: linear-gradient(135deg, #efebe9 0%, #d7ccc8 100%);
     text-align: center;
     height: 300px;
      display: flex;
@@ -34,7 +35,7 @@ header {
     border: 5px solid white;
     position: relative;
     top: 70px;
-    animation: 1.5s show2 ease;
+    animation: 1.5s show4 ease;
 
 
 }
@@ -79,8 +80,8 @@ header {
    overflow: hidden; 
    border-radius: 10px;
    box-shadow: -2px -2px 23px 0px rgba(0,0,0,0.28);
-    -webkit-box-shadow: -2px -2px 23px 0px rgba(0,0,0,0.28);
-    -moz-box-shadow: -2px -2px 23px 0px rgba(0,0,0,0.28);
+   -webkit-box-shadow: -2px -2px 23px 0px rgba(0,0,0,0.28);
+   -moz-box-shadow: -2px -2px 23px 0px rgba(0,0,0,0.28);
 }
 .project-photo img {
     height: auto;
@@ -112,8 +113,8 @@ header {
     padding: 10px;
     border-radius: 20px;
     box-shadow: -2px -2px 30px 0px rgba(0,0,0,0.1);
--webkit-box-shadow: -2px -2px 30px 0px rgba(0,0,0,0.1);
--moz-box-shadow: -2px -2px 30px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: -2px -2px 30px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: -2px -2px 30px 0px rgba(0,0,0,0.1);
 }
 .skill img {
     height: 50px;
@@ -141,8 +142,8 @@ header {
     height: 210px;
     border-radius: 20px;
     box-shadow: -2px -2px 30px 0px rgba(0,0,0,0.1);
--webkit-box-shadow: -2px -2px 30px 0px rgba(0,0,0,0.1);
--moz-box-shadow: -2px -2px 30px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: -2px -2px 30px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: -2px -2px 30px 0px rgba(0,0,0,0.1);
 }
 .animations {
     display: flex;
@@ -174,6 +175,28 @@ footer {
     text-align: center;
 }
 
+.design {
+    padding: 30px 0 50px 0;
+    border-bottom: 3px solid #dbdad3;
+     animation: 1.5s show ease;
+    
+}
+.design-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+.design img {
+    margin-top: 20px;
+    border-radius: 20px;
+    height: auto;
+    max-width: 450px;
+    box-shadow: -1px -2px 11px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px -2px 11px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px -2px 11px 0px rgba(0,0,0,0.75);
+
+}
+
+
 @media screen and (max-width: 750px) {
     .project-photos {
     flex-wrap: wrap;
@@ -191,6 +214,11 @@ footer {
 }
 .animations {
     left: 0;
+}
+.design img {
+   
+    max-width: 350px;
+
 }
 }
 
@@ -221,5 +249,14 @@ footer {
   }
   to {
     transform: translateY(0);
+  }
+}
+@keyframes show4 {
+  from {
+    opacity: 0; 
+    transform: scale(80%);
+  }
+  to {
+    transform: scale(100%);
   }
 }
